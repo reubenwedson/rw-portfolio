@@ -17,7 +17,6 @@ class About extends Component {
     // }
 
     return (
-        <!-- about-area start -->
         <div id="about" className="about-area">
             <div className="border"/>
             <div className="container">
@@ -25,7 +24,7 @@ class About extends Component {
                     <div className="row">
                         <div className="col-lg-6">
                             <div className="about-img">
-                                <img src="assets/images/about/img-1.jpg" alt="" />
+                                <img src="../assets/images/about/img-1.jpg" alt="" />
                             </div>
                         </div>
                         <div className="col-lg-6">
@@ -40,7 +39,6 @@ class About extends Component {
                 </div>
             </div>
         </div>
-      <!-- about-area end -->
   );
   }
 }

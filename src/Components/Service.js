@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 class Service extends Component {
     render() {
         return (
-            <!-- service-area start -->
             <div id="service" className="service-area section-padding">
                 <div className="border"/>
                 <div className="container">
@@ -113,7 +112,6 @@ class Service extends Component {
                     </div>
                 </div>
             </div>
-            <!-- service-area end -->
         );
     }
 }

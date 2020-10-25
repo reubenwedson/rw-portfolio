@@ -71,7 +71,6 @@ class Portfolio extends Component {
     // }
 
     return (
-        <!--Start project area-->
         <section id="protfolio" className="gallery-section section-padding">
             <div className="container">
                 <div className="row">
@@ -141,10 +140,9 @@ class Portfolio extends Component {
                             </div>
                         </div>
                     </div>
-                </div> <!-- end row -->
+                </div>
             </div>
         </section>
-      <!--End project area-->
   );
   }
 }

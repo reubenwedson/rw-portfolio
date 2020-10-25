@@ -15,7 +15,6 @@ class Header extends Component {
 
     return (
         <>
-        <!-- Start header -->
         <header id="header" className="site-header header-style-1">
             <nav className="navigation navbar navbar-default">
                 <div className="container-fluid">
@@ -39,7 +38,7 @@ class Header extends Component {
                             <li className="blog"><a href="#blog"><img src="../assets/images/home/img-2.jpg" alt="" /></a></li>
                             <li className="contact"><a href="#contact"><img src="../assets/images/home/img-3.jpg" alt="" /></a></li>
                         </ul>
-                    </div><!-- end of nav-collapse -->
+                    </div>
                     <div className="menu-open-btn-holder">
                         <button className="menu-open-btn">
                             <span/>
@@ -47,11 +46,10 @@ class Header extends Component {
                             <span/>
                         </button>
                     </div>
-                </div><!-- end of container -->
+                </div>
             </nav>
         </header>
-      <!-- end of header -->
-      <!-- start of hero -->
+
       <section className="hero hero-slider-wrapper hero-style-1">
           <div className="hero-slider">
               <div className="slide">
@@ -85,7 +83,6 @@ class Header extends Component {
               </ul>
           </div>
       </section>
-      <!-- end of hero slider -->
             </>
     );
   }

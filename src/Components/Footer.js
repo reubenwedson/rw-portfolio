@@ -10,7 +10,6 @@ class Footer extends Component {
     // }
 
     return (
-        <!-- footer-area start -->
         <div className="footer-area text-center">
             <div className="container">
                 <div className="row">
@@ -38,7 +37,6 @@ class Footer extends Component {
                 </div>
             </div>
         </div>
-      <!-- footer-area end -->
     );
   }
 }
