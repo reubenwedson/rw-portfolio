@@ -3,51 +3,53 @@ import React, { Component } from 'react';
 class Header extends Component {
   render() {
 
-    if(this.props.data){
-      var name = this.props.data.name;
-      var occupation= this.props.data.occupation;
-      var description= this.props.data.description;
+    // if(this.props.data){
+    //   var name = this.props.data.name;
+    //   var occupation= this.props.data.occupation;
+    //   var description= this.props.data.description;
       // var city= this.props.data.address.city;
-      var networks= this.props.data.social.map(function(network){
-        return <li key={network.name}><a href={network.url}><i className={network.className}></i></a></li>
-      })
-    }
+      // var networks= this.props.data.social.map(function(network){
+      //   return <li key={network.name}><a href={network.url}><i className={network.className}></i></a></li>
+      // })
+    // }
 
     return (
-      <header id="home">
-
-      <nav id="nav-wrap">
-
-         <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-	      <a className="mobile-btn" href="#home" title="Hide navigation">Hide navigation</a>
-
-         <ul id="nav" className="nav">
-            <li className="current"><a className="smoothscroll" href="#home">Home</a></li>
-            <li><a className="smoothscroll" href="#about">About</a></li>
-	         <li><a className="smoothscroll" href="#resume">Resume</a></li>
-            <li><a className="smoothscroll" href="#portfolio">Works</a></li>
-            {/*<li><a className="smoothscroll" href="#testimonials">Testimonials</a></li>*/}
-            {/*<li><a className="smoothscroll" href="#contact">Contact</a></li>*/}
-         </ul>
-
-      </nav>
-
-      <div className="row banner">
-         <div className="banner-text">
-            <h1 className="responsive-headline">I'm {name}.</h1>
-            <h3>I'm a <span>{occupation}</span>. {description}.</h3>
-            <hr />
-            <ul className="social">
-               {networks}
-            </ul>
-         </div>
-      </div>
-
-      <p className="scrolldown">
-         <a className="smoothscroll" href="#about"><i className="icon-down-circle"></i></a>
-      </p>
-
-   </header>
+        <!-- Start header -->
+        <header id="header" className="site-header header-style-1">
+            <nav className="navigation navbar navbar-default">
+                <div className="container-fluid">
+                    <div className="navbar-header">
+                        <button type="button" className="open-btn">
+                            <span className="sr-only">Toggle navigation</span>
+                            <span className="icon-bar"/>
+                            <span className="icon-bar"/>
+                            <span className="icon-bar"/>
+                        </button>
+                        <a className="navbar-brand" href="index-2.html"><img src="../assets/images/logo.png" alt /></a>
+                    </div>
+                    <div id="navbar" className="navbar-collapse collapse navigation-holder">
+                        <button className="close-navbar"><i className="ti-close"/></button>
+                        <button className="close-navbar-2"><i className="ti-close"/></button>
+                        <ul className="nav navbar-nav">
+                            <li className="home"><a href="#home"><img src="../assets/images/home/img-1.jpg" alt="" /></a></li>
+                            <li className="about"><a href="#about"><img src="../assets/images/home/img-6.jpg" alt="" /></a></li>
+                            <li className="service"><a href="#service"><img src="../assets/images/home/img-4.jpg" alt="" /></a></li>
+                            <li className="protfolio"><a href="#protfolio"><img src="../assets/images/home/img-5.jpg" alt="" /></a></li>
+                            <li className="blog"><a href="#blog"><img src="../assets/images/home/img-2.jpg" alt="" /></a></li>
+                            <li className="contact"><a href="#contact"><img src="../assets/images/home/img-3.jpg" alt="" /></a></li>
+                        </ul>
+                    </div><!-- end of nav-collapse -->
+                    <div className="menu-open-btn-holder">
+                        <button className="menu-open-btn">
+                            <span/>
+                            <span/>
+                            <span/>
+                        </button>
+                    </div>
+                </div><!-- end of container -->
+            </nav>
+        </header>
+      <!-- end of header -->
     );
   }
 }
