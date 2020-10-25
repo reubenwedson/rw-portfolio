@@ -1,8 +1,8 @@
 {
-  "homepage": "http://reubenwedson.github.io/personalportfolio",
   "name": "personalportfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://reubenwedson.github.io/rw-portfolio",
   "dependencies": {
     "jquery": "^3.5.1",
     "react": "^16.13.1",
