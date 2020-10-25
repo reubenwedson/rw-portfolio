@@ -3,34 +3,42 @@ import React, { Component } from 'react';
 class Footer extends Component {
   render() {
 
-    if(this.props.data){
-      var networks= this.props.data.social.map(function(network){
-        return <li key={network.name}><a href={network.url}><i className={network.className}></i></a></li>
-      })
-    }
+    // if(this.props.data){
+    //   var networks= this.props.data.social.map(function(network){
+    //     return <li key={network.name}><a href={network.url}><i className={network.className}></i></a></li>
+    //   })
+    // }
 
     return (
-      <footer>
-
-     <div className="row">
-        <div className="twelve columns">
-           <ul className="social-links">
-              {networks}
-           </ul>
-
-           <ul>
-            <li>Modified with love by 23n <span>♥</span>️</li>
-           </ul>
-
-           <ul className="copyright">
-              <li>&copy; All credit goes to Tim Baker - Copyright 2017 Tim Baker</li>
-              <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>
-           </ul>
-
+        <!-- footer-area start -->
+        <div className="footer-area text-center">
+            <div className="container">
+                <div className="row">
+                    <div className="col-12">
+                        <div className="footer-image">
+                            <a href="#"><img src="../assets/images/logo.png" alt="" /></a>
+                        </div>
+                    </div>
+                    <div className="col-12">
+                        <div className="footer-menu">
+                            <ul className="d-flex " >
+                                <li><a href="#"><i className="ti-twitter"/></a></li>
+                                <li><a href="#"><i className="ti-dribbble"/></a></li>
+                                <li><a href="#"><i className="ti-facebook"/></a></li>
+                                <li><a href="#"><i className="ti-linkedin"/></a></li>
+                                <li><a href="#"><i className="ti-skype"/></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="col-12">
+                        <div className="footer-sub">
+                            <p><i className="fa fa-copyright"/>copyright2019<span> website by themepresss</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="go-top"><a className="smoothscroll" title="Back to Top" href="#home"><i className="icon-up-open"></i></a></div>
-     </div>
-  </footer>
+      <!-- footer-area end -->
     );
   }
 }
