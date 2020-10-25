@@ -41,7 +41,16 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+        <!-- start page-wrapper -->
+        <div className="page-wrapper" id="home">
+          <!-- start page-loader -->
+          <div className="preloader">
+            <div className="spinner">
+              <div className="dot1"/>
+              <div className="dot2"/>
+            </div>
+          </div>
+          <!-- end page-loader -->
         <Header data={this.state.resumeData.main}/>
         <About data={this.state.resumeData.main}/>
         <Resume data={this.state.resumeData.resume}/>
@@ -50,6 +59,7 @@ class App extends Component {
         {/*<Contact data={this.state.resumeData.main}/>*/}
         <Footer data={this.state.resumeData.main}/>
       </div>
+        <!-- end of page-wrapper -->
     );
   }
 }
