@@ -3,54 +3,45 @@ import React, { Component } from 'react';
 class About extends Component {
   render() {
 
-    if(this.props.data){
-      var name = this.props.data.name;
-      var profilepic= "images/"+this.props.data.image;
-      // var bio = this.props.data.bio;
-      var street = this.props.data.address.street;
-      var city = this.props.data.address.city;
-      var state = this.props.data.address.state;
-      var zip = this.props.data.address.zip;
-      var phone= this.props.data.phone;
-      var email = this.props.data.email;
-      var resumeDownload = this.props.data.resumedownload;
-    }
+    // if(this.props.data){
+    //   var name = this.props.data.name;
+    //   var profilepic= "images/"+this.props.data.image;
+    //   // var bio = this.props.data.bio;
+    //   var street = this.props.data.address.street;
+    //   var city = this.props.data.address.city;
+    //   var state = this.props.data.address.state;
+    //   var zip = this.props.data.address.zip;
+    //   var phone= this.props.data.phone;
+    //   var email = this.props.data.email;
+    //   var resumeDownload = this.props.data.resumedownload;
+    // }
 
     return (
-      <section id="about">
-      <div className="row">
-         <div className="three columns">
-            <img className="profile-pic"  src={profilepic} alt="Profile Pic" width="65" height="100" />
-         </div>
-         <div className="nine columns main-col">
-            <h2>About Me</h2>
-
-            <p>I am made up of strong character, hardworking, committed towards my goals.I don't settle until i have accomplished my tasks.I can work on assigned tasks with less supervision tagged along with creativity towards projects. <br/>
-                I love Teamwork since learning is part and parcel of it. I believe in the spirit of togetherness duties are accomplished. <br/>
-                Despite my multitask abilities, I am committed to standards of professionalism based on media demands.</p>
-            <div className="row">
-               <div className="columns contact-details">
-                  <h2>Contact Details</h2>
-                  <p className="address">
-						   <span>{name}</span><br />
-						   <span>{street}<br />
-						         {city} {state}, {zip}
-                   </span><br />
-						   <span>{phone}</span><br />
-                     <span>{email}</span>
-					   </p>
-               </div>
-               <div className="columns download">
-                  <p>
-                     <a href={resumeDownload} className="button" target="_blank" rel="noopener noreferrer"><i className="fa fa-download"></i>Download Resume</a>
-                  </p>
-               </div>
+        <!-- about-area start -->
+        <div id="about" className="about-area">
+            <div className="border"/>
+            <div className="container">
+                <div className="about-item">
+                    <div className="row">
+                        <div className="col-lg-6">
+                            <div className="about-img">
+                                <img src="assets/images/about/img-1.jpg" alt="" />
+                            </div>
+                        </div>
+                        <div className="col-lg-6">
+                            <div className="about-content">
+                                <h2>About Me</h2>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+                                <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem IpsumThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, </p>
+                                <a href="#" className="theme-btn">Download Resume</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-         </div>
-      </div>
-
-   </section>
-    );
+        </div>
+      <!-- about-area end -->
+  );
   }
 }
 
