@@ -14,6 +14,7 @@ class Header extends Component {
     // }
 
     return (
+        <>
         <!-- Start header -->
         <header id="header" className="site-header header-style-1">
             <nav className="navigation navbar navbar-default">
@@ -50,6 +51,42 @@ class Header extends Component {
             </nav>
         </header>
       <!-- end of header -->
+      <!-- start of hero -->
+      <section className="hero hero-slider-wrapper hero-style-1">
+          <div className="hero-slider">
+              <div className="slide">
+                  <div className="slider-image">
+                      <img src="assets/images/slider/slide-2.jpg" alt className="slider-bg" />
+                  </div>
+                  <div className="container">
+                      <div className="row">
+                          <div className="col col-md-7 col-sm-10 slide-caption">
+                              <div className="slide-subtitle">
+                                  <h4>I Am Aliza Anne</h4>
+                              </div>
+                              <div className="slide-title">
+                                  <h2>Creative Designer</h2>
+                              </div>
+                              <div className="btns">
+                                  <a href="#contact" className="theme-btn go-contact-area">Contact Me</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div className="copy"><p>Creative Designer And Developer</p></div>
+          <div className="social-links">
+              <ul>
+                  <li><a href="#"><i className="ti-facebook"/></a></li>
+                  <li><a href="#"><i className="ti-twitter-alt"/></a></li>
+                  <li><a href="#"><i className="ti-linkedin"/></a></li>
+                  <li><a href="#"><i className="ti-pinterest"/></a></li>
+              </ul>
+          </div>
+      </section>
+      <!-- end of hero slider -->
+            </>
     );
   }
 }
